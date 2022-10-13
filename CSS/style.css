@@ -70,10 +70,14 @@ body > p {
 .work > li {
     font-size: 20px;
     letter-spacing: 2px;
-    padding-left: 25px;
+    padding-left: 0 0 0 0; 
 }
-.container {
-    width: 100px; height: 500px; border: 1px solid black; margin 0 auto;
+
+main > h1 {
+    font-size: 12px;
+    text-align: center;
+    padding: 100px
+    
 }
 
 footer {
@@ -87,7 +91,7 @@ footer > ul {
     font-family: arial;
     justify-content: space-between;
     font-size: 4px;
-    padding: 500px;
+    padding: 500px 0 0 0 0;
 
 }
 
