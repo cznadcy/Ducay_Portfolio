@@ -52,11 +52,15 @@ li {
     display: inline-block;
 }
 
-body > img {
+main > img {
     width: 800px;
     height: 600px;
     float: right;
     padding: 0 0 0 0;
+}
+
+body > p {
+    align-content: left;
 }
     
 .work {
