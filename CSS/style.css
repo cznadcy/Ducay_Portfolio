@@ -1,11 +1,4 @@
-/* FONTS USED
 
-
-font-family: 'Andale Mono', sans-serif;
-font-family: 'DIN Condensed', sans-serif; 
-    
-    
-    */
 
 header {
     display: flex;
@@ -52,41 +45,145 @@ li {
     display: inline-block;
 }
 
-main > img {
-    width: 800px;
-    height: 600px;
-    float: right;
-    padding: 0 -30px -30px 0;
+#heroGrid {
+    margin: 0px 5%;
+    display:grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 100% 100%;
+    grid-template-areas: 
+    "about1 about2";
+    border-bottom: 5px solid #846E37;
 }
-
-body > p {
-    align-content: left;
-}
-    
-main > h1 {
-    font-size: 13px;
-    text-align: left;
-    padding: 400px 30px 30px 30px;
-    border-top: 1px;
-    font-family: Gurmukhi; 
+/*.banner2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border-bottom: 1px solid black;
+    grid-template-areas: "topRow"; 
+}
+    */
+
+#about1 {
+    grid-area: about1;
 }
 
-section > li {
-    align-items: left
-;
+
+#about1 {
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+    left: 30px;
+    top: 400px;
+    padding: 25px;
+    max-width: 550px;
+    z-index: 100;
 }
-.work > li > a {
-    font-size: 20px;
+
+#about2 {
+    grid-area: about2;
+    background-image: url("../PORTF IMG/PLACEHOLDER.png");
+}
+
+.img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: right;
+    position: relative; 
+}
+
+.expCurator {
+    font-family: Gurmukhi mn;
+    font-weight: medium;
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin:auto;
+}
+
+.expCuratorDescr {
+    font-size: 12px;
+    font-family: baskerville; 
+    letter-spacing: 2px;
+    padding: 20px 40px 0 0;
+    text-align: center;
+    margin: auto;
+}
+
+.workType {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+    font-family: din condensed;
     letter-spacing: 5px;
+    padding: 0 0 150px 30px;
+    font-size:20px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 125% 75;
+}
+
+
+.skill1 {
+    color: white;
+    background-color: black;
+}
+
+.skill2 {
+    color: white;
+    background-color: black;
+}
+
+.containerGrid1 {
+    display: grid;
+    grid-template-columns: 50% 0% 50% 50%;
+    background-color: black;
+    padding:300px 0 600px 0;
+    align-items: flex-start;
+    color:white;
+    font-size: 35px;
+    font-family: din condensed;
+}
+
+.containerGrid2 {
+    display: grid;
+    grid-template-columns: 50% 0% 50% 50%;
+    background-color: black;
+    padding:300px 0 600px 0;
+    align-items: flex-start;
+    color:white;
+    font-size: 35px;
+    font-family: din condensed;
+}
+
+.containerGrid3 {
+    display: grid;
+    grid-template-columns: 50% 0% 50% 50%;
+    background-color: black;
+    padding:300px 0 600px 0;
+    align-items: flex-start;
+    color:white;
+    font-size: 35px;
+    font-family: din condensed;
 }
 
 footer {
     text-align: center;
-    color: black;
-    padding: 600px 0 0 0;
+    padding: 50px 0 0 0;
     font-size: 12px;
+    font-weight: bold;
+}
+
+.display-1 {
+    font-family: din condensed;
+    letter-spacing: 3px;
+    color: 846E37;
 }
 
 
+.jumbotron {
+    background-color: black;
+}
 
