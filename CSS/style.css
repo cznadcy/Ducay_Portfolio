@@ -83,6 +83,11 @@ li {
 #about2 {
     grid-area: about2;
     background-image: url("../PORTF IMG/PLACEHOLDER.png");
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
 }
 
 .img {
