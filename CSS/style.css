@@ -30,7 +30,6 @@ li {
     font-size: 16px;
     font-family: din condensed;
     display: inline-block;
-    border-bottom: 1px solid width="3px"; 
     
 }
 
@@ -42,7 +41,63 @@ li {
     padding: 3px 10px 3px 10px;
     
 }
+
+.buttonResume {
+    padding: 0;
+    width: 100px;
+    text-align: center;
+    background-color: none;
+    transition: background-color 1.5s ease;
+    border-radius: 10px;
+    color: black;
+}
+
+.buttonResume:hover {
+    background-color: #846E37; 
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+
 /* HEROS SPACE */
+
+.buttonUXUI {
+    padding: 20px;
+    width: 500px
+    text-align: center;
+    background-color: none;
+    transition: background-color 0.5s ease;
+    border-radius: 10px;
+    color: black;
+    border-style: none;
+    background-color: white;
+    font-size: 25px;
+}
+
+.buttonUXUI:hover {
+    color: #846E37;
+    border-bottom: #846E37 2px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.buttonArch {
+    padding: 20px;
+    width: 500px
+    text-align: center;
+    background-color: none;
+    transition: background-color 0.5s ease;
+    border-radius: 10px;
+    color: black;
+    border-style: none;
+    background-color: white;
+    font-size: 25px;
+}
+
+.buttonArch:hover {
+    color: #846E37;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 6px 0 rgba(0,0,0,0.19);
+}
 
 #heroGrid {
     margin: 0px;
@@ -132,30 +187,83 @@ li {
     font-size:20px;
 }
 
-/* CONTENT - WORKS HERE*/
+/* CONTENT - PROJECTS HERE*/
+
+.background-p1 {
+    background-color: black;
+    
+}
 
 #uxuiContent {
     display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 16px;
-    grid-column-gap: 16px;
-    margin-bottom: 24px;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 50px;
     background-color: black;
-    
+    margin: 50px;
 }
-
 
 .title {
     font-family: din condensed;
-    font-size: 16px;
-    color: #D9D9D9;
-    padding: 15px 75px 15px 75px;
+    font-size: 30px;
+    color: light white;
     background-color: black;
     color: #846E37;
+    grid-column-start: span 3;
+    align-items: center;
+    padding: 75px 0 0 0;
+    margin: none;
+}
+
+.p1-img-1 {
+    align-items: center;
+    padding: 50px;
+}
+
+.p1-col-1 {
+    grid-column-start: 1;
+    padding: 20px 0 0 100px;
     
 }
+
+.p1-col-2 { 
+    grid-column-start: 2;
+    padding: 20px 0 0 100px;
+}
+
+
+.p1-row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-row-gap: 50px;
+    margin: 100px 0 0 100px;
+}
+.p1-img-2 {
+    align-items: center;
+}
+
+.p1-col-3 {
+    grid-column-start: 2;
+    font-family: din condensed;
+    color: light white;
+    background-color: black;
+    color: #846E37;
+    padding: 75px 25px 0 100px;
+    font-size: 30px;
+    color: #846E37;
+    height: 100vh;
+
+
+}
+.p1-subtitle {
+    font-family: din condensed;
+    font-size: 18px;
+    color: light white;
+    background-color: black;
+    color: #846E37;
+}
+
 
 
 .descr1 {
@@ -164,7 +272,7 @@ li {
     font-weight: regular;
     text-align: left;
     letter-spacing: 2px;
-    margin: auto;
+    font-size: 14px;
     
 }
 
@@ -172,14 +280,20 @@ li {
     font-family: roboto;
     font-size: 12px;
     color: #D9D9D9;
-    padding: 15px 75px 15px 75px;
     background-color: black;
     color: white;
-    margin: auto;
+    letter-spacing: 2px;
+
 }
+
 .overviewText {
-    color: white;
-    font-family: roboto;
+    font-family: gurmukhi;
+    text-align: left;
+    color: lightgrey;
+    font-size: 16px;
+    letter-spacing: 2px;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 
@@ -202,8 +316,8 @@ li {
     text-align: center;
 }
 
-/*
 
+/*
 @media only screen and (max-width: 600px) {
     #heroGrid {
       position: static;
