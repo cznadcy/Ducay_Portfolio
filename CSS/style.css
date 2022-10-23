@@ -210,7 +210,6 @@ li {
     background-color: black;
     color: #846E37;
     grid-column-start: span 3;
-    align-items: center;
     padding: 75px 0 0 0;
     margin: none;
 }
@@ -218,6 +217,11 @@ li {
 .p1-img-1 {
     align-items: center;
     padding: 50px;
+}
+
+.p1-col {
+    padding: 150px 0 0 200px;
+    grid-column-start: 2;
 }
 
 .p1-col-1 {
