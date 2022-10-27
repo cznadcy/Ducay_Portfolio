@@ -1,5 +1,5 @@
 
-/* HEADER AND NAV */
+/* HEADER AND NAV HW 17,18 */
 header {
     display: flex;
     justify-content: space-between;
@@ -42,22 +42,6 @@ li {
     
 }
 
-.buttonResume {
-    padding: 0;
-    width: 100px;
-    text-align: center;
-    background-color: none;
-    transition: background-color 1.5s ease;
-    border-radius: 10px;
-    color: black;
-}
-
-.buttonResume:hover {
-    background-color: #846E37; 
-    color: white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-
-}
 
 
 /* HEROS SPACE */
@@ -194,14 +178,6 @@ li {
     
 }
 
-#uxuiContent {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 50px;
-    background-color: black;
-    margin: 50px;
-}
 
 .title {
     font-family: din condensed;
@@ -209,54 +185,56 @@ li {
     color: light white;
     background-color: black;
     color: #846E37;
-    grid-column-start: span 3;
-    padding: 75px 0 0 0;
-    margin: none;
+    grid-column-start: span 2;
+    align-items: left;
+    margin: 0 200px 0 200px;
+    padding: 100px 0 0 100px;
 }
 
 .p1-img-1 {
-    align-items: center;
-    padding: 50px;
+    padding: 0 200px 0 275px
 }
 
-.p1-col {
-    padding: 150px 0 0 200px;
-    grid-column-start: 2;
+#uxuiContent {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    grid-column-gap: none;
+    background-color: black;
+    margin: 50px 200px 50px 200px; 
 }
-
 .p1-col-1 {
-    grid-column-start: 1;
-    padding: 20px 0 0 100px;
-    
+    grid-column-start: 1; 
+    padding: 0 0 0 120px;
 }
 
-.p1-col-2 { 
+.p1-col-2 {
     grid-column-start: 2;
-    padding: 20px 0 0 100px;
+    font-family: din condensed;
+    color: light white;
+    background-color: black;
+    color: #846E37;overflow-x: ;
+    font-size: 30px;
+    color: #846E37;
+    padding: 0 100px 0 50px;
 }
-
 
 .p1-row-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-row-gap: 50px;
-    margin: 100px 0 0 100px;
 }
 .p1-img-2 {
-    align-items: center;
+    padding: 0 200px 0 275px
 }
 
 .p1-col-3 {
-    grid-column-start: 2;
     font-family: din condensed;
     color: light white;
-    background-color: black;
-    color: #846E37;
-    padding: 75px 25px 0 100px;
+    color: #846E37;overflow-x: ;
     font-size: 30px;
     color: #846E37;
-    height: 100vh;
+    padding: 50px 300px 0 300px;
 
 
 }
@@ -321,7 +299,7 @@ li {
 }
 
 
-/*
+/* -- HQ 19
 @media only screen and (max-width: 600px) {
     #heroGrid {
       position: static;
